@@ -1,0 +1,21 @@
+{
+    "page_variables": {
+        "sitename": "GKBRK",
+        "siteslogan": "A Developers Website",
+        "copyright": "Gokberk Yaltirakli"
+    },
+    "template_file": "template.html",
+    "compile_folders": [
+        {
+            "method": "markdown-page",
+            "in": "precompiled\\pages\\*.markdown",
+            "out": "compiled\\*.html",
+            "template_file": "template.html"
+        },
+        {
+            "method": "static-file",
+            "in": "precompiled\\static\\*",
+            "out": "compiled\\static\\*"
+        }
+    ]
+}
