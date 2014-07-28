@@ -28,6 +28,9 @@ for compile_folder in compile_options["compile_folders"]:
             values["title"] = page_title
             values.update(compile_options["page_variables"])
 
+            if "page_variables" in compile_folder:
+                values.update(compile_folder["page_variables"]) #Allow changing the variables based on the folder.
+
             if "template_file" in compile_folder:
                 template_filename = compile_folder["template_file"]
             else:
